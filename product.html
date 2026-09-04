@@ -1,0 +1,53 @@
+<?php require_once __DIR__ . '/includes/auth_guard.php'; ?>
+<!DOCTYPE html>
+<html lang="en" class="auth-checking">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | Scentelle</title>
+  <link rel="icon" href="assets/images/bottle-amber.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="logo" href="index.html">Scentelle</a>
+      <nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="shop.html?gender=Men">Men</a><a href="shop.html?gender=Women">Women</a><a href="about.html">About</a></nav>
+      <div class="nav-actions">
+        <button class="icon-button" data-search-link type="button" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+        <a class="icon-button" href="login.html" aria-label="Account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.8-4 5-6 8-6s6.2 2 8 6"/></svg></a>
+        <a class="icon-button" href="cart.html" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h15l-2 9H8L6 7Z"/><path d="M6 7 5 3H2"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg><span class="cart-count" data-cart-count>0</span></a>
+        <button class="logout-button" data-logout type="button">Logout</button>
+        <button class="menu-toggle" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="container detail-layout" data-product-detail></div>
+    </section>
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">Perfume notes</p><h2>The composition</h2></div></div>
+        <div class="notes-grid" data-notes></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">Related products</p><h2>Similar fragrances</h2></div></div>
+        <div class="product-grid" data-related></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h3>Scentelle</h3><p>Modern fragrances crafted for memorable everyday moments.</p></div>
+      <div><h4>Shop</h4><div class="footer-links"><a href="shop.html?gender=Men">Men</a><a href="shop.html?gender=Women">Women</a><a href="shop.html?gender=Unisex">Unisex</a><a href="shop.html">All Perfumes</a></div></div>
+      <div><h4>Quick Links</h4><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="about.html#contact">Contact</a><a href="cart.html">Cart</a></div></div>
+      <div><h4>Follow Us</h4><div class="footer-links"><a href="https://www.instagram.com/">Instagram</a><a href="https://www.facebook.com/">Facebook</a><a href="https://www.tiktok.com/">TikTok</a></div></div>
+    </div>
+    <div class="container footer-bottom">© 2026 Scentelle. All Rights Reserved.</div>
+  </footer>
+  <script src="js/auth.js"></script><script src="js/products.js"></script><script src="js/main.js"></script><script src="js/product.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Rose perfume bottle">
+  <rect width="420" height="520" fill="#fbf5f4"/>
+  <ellipse cx="210" cy="444" rx="104" ry="17" fill="#d9b8b2" opacity=".42"/>
+  <rect x="187" y="100" width="46" height="54" rx="7" fill="#c3a15b"/>
+  <circle cx="210" cy="72" r="38" fill="#f4d8d3"/>
+  <circle cx="210" cy="72" r="27" fill="#fff7f4" opacity=".55"/>
+  <rect x="128" y="154" width="164" height="262" rx="78" fill="#d98983" opacity=".76"/>
+  <rect x="151" y="178" width="118" height="212" rx="58" fill="#f6b8b0" opacity=".46"/>
+  <rect x="154" y="245" width="112" height="58" rx="28" fill="#fffaf7" opacity=".83"/>
+  <path d="M165 185c18-14 73-17 91 0" stroke="#fff" stroke-width="5" opacity=".55" fill="none"/>
+  <text x="210" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="21" fill="#33211f">Scentelle</text>
+</svg>

@@ -1,0 +1,16 @@
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs and local temp files
+*.log
+tmp/
+temp/
+
+# Dependency folders, if added later
+node_modules/
+vendor/
+
+# Local environment overrides
+.env

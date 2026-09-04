@@ -1,0 +1,123 @@
+<?php require_once __DIR__ . '/includes/auth_guard.php'; ?>
+<!DOCTYPE html>
+<html lang="en" class="auth-checking">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scentelle | Modern Perfume Store</title>
+  <link rel="icon" href="assets/images/bottle-amber.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="logo" href="index.html">Scentelle</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="active-link" href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="shop.html?gender=Men">Men</a>
+        <a href="shop.html?gender=Women">Women</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button" data-search-link type="button" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+        <a class="icon-button" href="login.html" aria-label="Account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.8-4 5-6 8-6s6.2 2 8 6"/></svg></a>
+        <a class="icon-button" href="cart.html" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h15l-2 9H8L6 7Z"/><path d="M6 7 5 3H2"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg><span class="cart-count" data-cart-count>0</span></a>
+        <button class="logout-button" data-logout type="button">Logout</button>
+        <button class="menu-toggle" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="assets/images/hero-perfumes.png" alt="Elegant perfume bottles on an ivory surface">
+      <div class="container hero-content">
+        <p class="eyebrow">Modern fragrance house</p>
+        <h1>Find Your Signature</h1>
+        <p class="lead">Discover fragrances crafted to leave a lasting impression.</p>
+        <div class="button-row">
+          <a class="btn dark" href="shop.html">Shop Now</a>
+          <a class="btn light" href="#featured">Explore Collection</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Shop by category</p>
+            <h2>Fragrance for every mood</h2>
+          </div>
+        </div>
+        <div class="category-grid">
+          <article class="category-card"><img src="assets/images/category-men.svg" alt="Men perfume category"><div><h3>Men</h3><p>Confident woods, citrus, and amber.</p><a class="btn light" href="shop.html?gender=Men">Shop</a></div></article>
+          <article class="category-card"><img src="assets/images/category-women.svg" alt="Women perfume category"><div><h3>Women</h3><p>Elegant florals, musk, and soft spice.</p><a class="btn light" href="shop.html?gender=Women">Shop</a></div></article>
+          <article class="category-card"><img src="assets/images/category-unisex.svg" alt="Unisex perfume category"><div><h3>Unisex</h3><p>Balanced scents made for everyone.</p><a class="btn light" href="shop.html?gender=Unisex">Shop</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="featured">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Featured perfumes</p>
+            <h2>Customer favorites</h2>
+          </div>
+          <a class="btn light" href="shop.html">View All</a>
+        </div>
+        <div class="product-grid" data-featured-products></div>
+      </div>
+    </section>
+
+    <section class="promo-band">
+      <div class="container promo-inner">
+        <div>
+          <p class="eyebrow">Limited edit</p>
+          <h2>The Signature Collection</h2>
+          <p>Timeless fragrances created for unforgettable moments.</p>
+        </div>
+        <a class="btn gold" href="shop.html">Explore Now</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="why-grid">
+          <article class="why-card"><div class="icon">P</div><h3>Premium Fragrances</h3><p>Carefully blended scents with elegant lasting power.</p></article>
+          <article class="why-card"><div class="icon">A</div><h3>Authentic Products</h3><p>Each bottle is presented with clear product details.</p></article>
+          <article class="why-card"><div class="icon">D</div><h3>Fast Delivery</h3><p>Simple delivery rules and free shipping over Rs. 10,000.</p></article>
+          <article class="why-card"><div class="icon">R</div><h3>Easy Returns</h3><p>A calm shopping experience from cart to checkout.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section newsletter">
+      <div class="container">
+        <p class="eyebrow">Newsletter</p>
+        <h2>Stay in the Scent</h2>
+        <form data-newsletter>
+          <input type="email" placeholder="Enter your email address" aria-label="Email address">
+          <button class="btn dark" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h3>Scentelle</h3><p>Modern fragrances crafted for memorable everyday moments.</p></div>
+      <div><h4>Shop</h4><div class="footer-links"><a href="shop.html?gender=Men">Men</a><a href="shop.html?gender=Women">Women</a><a href="shop.html?gender=Unisex">Unisex</a><a href="shop.html">All Perfumes</a></div></div>
+      <div><h4>Quick Links</h4><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="about.html#contact">Contact</a><a href="cart.html">Cart</a></div></div>
+      <div><h4>Follow Us</h4><div class="footer-links"><a href="https://www.instagram.com/">Instagram</a><a href="https://www.facebook.com/">Facebook</a><a href="https://www.tiktok.com/">TikTok</a></div></div>
+    </div>
+    <div class="container footer-bottom">© 2026 Scentelle. All Rights Reserved.</div>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

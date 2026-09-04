@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" role="img" aria-label="Men perfume category">
+  <rect width="640" height="430" fill="#eee8dd"/>
+  <rect x="75" y="260" width="490" height="84" rx="6" fill="#d9c8ae"/>
+  <rect x="252" y="80" width="136" height="264" rx="18" fill="#222"/>
+  <rect x="282" y="35" width="76" height="56" rx="8" fill="#b59654"/>
+  <rect x="242" y="16" width="156" height="34" rx="6" fill="#111"/>
+  <rect x="278" y="180" width="84" height="54" rx="4" fill="#f1eadf"/>
+  <circle cx="465" cy="260" r="58" fill="#b59654" opacity=".25"/>
+</svg>

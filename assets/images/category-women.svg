@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" role="img" aria-label="Women perfume category">
+  <rect width="640" height="430" fill="#fbf0ee"/>
+  <path d="M0 310c130-54 223-34 321-8 113 30 209 26 319-30v158H0z" fill="#e2c3bc"/>
+  <rect x="250" y="119" width="140" height="218" rx="66" fill="#d98983" opacity=".82"/>
+  <circle cx="320" cy="75" r="36" fill="#f1ccc6"/>
+  <rect x="295" y="104" width="50" height="42" rx="8" fill="#b59654"/>
+  <rect x="278" y="212" width="84" height="50" rx="25" fill="#fff8f2"/>
+  <path d="M448 96c40 30 40 89 0 119-40-30-40-89 0-119z" fill="#c77476" opacity=".32"/>
+</svg>
