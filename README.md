@@ -1,6 +1,43 @@
+![Scentelle banner](assets/images/readme-banner.svg)
+
 # Scentelle
 
-Scentelle is a semester-level perfume e-commerce website built with HTML, CSS, vanilla JavaScript, PHP, and MySQL.
+Scentelle is a semester-level perfume e-commerce website for a modern fragrance store. It includes a polished frontend, PHP authentication, MySQL product data, contact/newsletter storage, and checkout order saving.
+
+## Screenshots
+
+![Scentelle homepage](assets/screenshots/home.png)
+
+| Login | Shop |
+| --- | --- |
+| ![Login page](assets/screenshots/login.png) | ![Shop page](assets/screenshots/shop.png) |
+
+| Product Details | Cart | Checkout |
+| --- | --- | --- |
+| ![Product details page](assets/screenshots/product.png) | ![Cart page](assets/screenshots/cart.png) | ![Checkout page](assets/screenshots/checkout.png) |
+
+## Tech Stack
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- PHP
+- MySQL
+- XAMPP
+
+## Features
+
+- Login and signup with PHP sessions
+- Registered users saved in MySQL
+- Protected store pages that redirect guests to login
+- Product catalog loaded from MySQL
+- Search, filtering, and sorting
+- Dynamic product details page
+- LocalStorage shopping cart
+- Promo code support with `SCENT10`
+- Checkout order saving into MySQL
+- Contact form and newsletter storage
+- Responsive layout for desktop, tablet, and mobile
 
 ## XAMPP Setup
 
@@ -19,6 +56,15 @@ Scentelle is a semester-level perfume e-commerce website built with HTML, CSS, v
 
 5. Open the website:
    `http://localhost/Scentelle/login.html`
+
+## Default Flow
+
+1. Open the login page.
+2. Create an account.
+3. The account is saved in the `users` table.
+4. After signup/login, PHP starts a session.
+5. The user is redirected to the homepage.
+6. Store pages remain blocked until the user is logged in.
 
 ## Database
 

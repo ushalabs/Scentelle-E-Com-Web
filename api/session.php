@@ -5,7 +5,7 @@ session_start();
 require_once __DIR__ . '/helpers.php';
 
 if (!isset($_SESSION['user'])) {
-    respond(false, 'Please login to continue.', ['authenticated' => false], 401);
+    respond(false, 'Please login to continue.', ['authenticated' => false]);
 }
 
 respond(true, 'User is logged in.', [
