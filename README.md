@@ -8,13 +8,13 @@ Scentelle is a semester-level perfume e-commerce website for a modern fragrance 
 
 ![Scentelle homepage](assets/screenshots/home.png)
 
-| Login | Shop |
+| Product Details | Shop |
 | --- | --- |
-| ![Login page](assets/screenshots/login.png) | ![Shop page](assets/screenshots/shop.png) |
+| ![Product details page](assets/screenshots/product.png) | ![Shop page](assets/screenshots/shop.png) |
 
-| Product Details | Cart | Checkout |
-| --- | --- | --- |
-| ![Product details page](assets/screenshots/product.png) | ![Cart page](assets/screenshots/cart.png) | ![Checkout page](assets/screenshots/checkout.png) |
+| Cart | Checkout |
+| --- | --- |
+| ![Cart page](assets/screenshots/cart.png) | ![Checkout page](assets/screenshots/checkout.png) |
 
 ## Tech Stack
 
